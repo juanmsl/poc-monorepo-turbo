@@ -1,8 +1,11 @@
 {
-  "extends": "@repo/typescript-config/react-library.json",
+  "extends": "@studio/typescript-config/react-library.json",
+  "include": ["**/*.ts", "**/*.tsx", ".storybook/**/*.ts", ".storybook/**/*.tsx"],
+  "exclude": ["dist", "lib", "node_modules", "tsup.config.cjs"],
   "compilerOptions": {
-    "outDir": "dist"
+    "rootDir": "src",
+    "outDir": "dist",
+    "baseUrl": "src",
+    "resolveJsonModule": true
   },
-  "include": ["src"],
-  "exclude": ["dist", "build", "node_modules"]
 }
