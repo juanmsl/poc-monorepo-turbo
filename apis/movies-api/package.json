@@ -1,0 +1,23 @@
+{
+  "name": "@studio/movies-api",
+  "version": "0.0.1",
+  "sideEffects": false,
+  "license": "MIT",
+  "type": "module",
+  "types": "./src/index.ts",
+  "exports": "./src/index.ts",
+  "scripts": {
+    "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "lint:fix": "yarn lint --fix"
+  },
+  "devDependencies": {
+    "@studio/eslint-config": "*",
+    "@studio/typescript-config": "*",
+    "@types/node": "^18.11.18",
+    "eslint": "^9.29.0",
+    "typescript": "^4.9.4"
+  },
+  "dependencies": {
+    "axios": "^1.9.0"
+  }
+}
